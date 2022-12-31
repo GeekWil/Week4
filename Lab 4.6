@@ -1,0 +1,13 @@
+name = input()
+
+name_2 = name.split(' ') #split between space(Pat, Silly, Doe)
+#the if else statement determine whether it contain middle name or not
+if len(name_2)>=3:
+    first_name = name_2[0]
+    middle_name = name_2[1]
+    last_name = name_2[2]
+    print(f'{last_name}, {first_name[0]}.{middle_name[0]}.')
+else:
+    first_name = name_2[0]
+    middle_name = name_2[1]
+    print(f'{middle_name}, {first_name[0]}.')
