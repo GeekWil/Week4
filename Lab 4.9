@@ -1,0 +1,11 @@
+name = input()
+
+word = name
+name1 = word.replace(" ", "")   #take out all the spacing
+name2 = name1                   
+name2 = name2[::-1]             #reversed the word
+
+if name1 == name2:              #if the original is same as reversed
+    print(f'{name} is a palindrome')
+else:
+    print(f'{name} is not a palindrome')
